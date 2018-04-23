@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Cadastro</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="./JavaScript/menu.js"></script>
+        <script src="./JavaScript/cadastrocliente.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    
+    <body>
+        <!--Menu de navegação-->
+        <nav class="centro" id="menu">
+            <img src="./img/cancel.svg" class="menuClose" onclick="closeMenu()">
+            <h2>Menu</h2>
+            <ul>
+                <li>Usuário</li>
+                <li>Cliente</li>
+                <li>Professor</li>
+                <li>Courso</li>
+                <li>Voltar</li>
+            </ul>
+        </nav>
+
+        <!--Cadastro-->
+        <main>
+            <img src="./img/menu-button.svg" class="menuOpen" onclick="openMenu()">
+            <div>
+                <h1>Cadastro de Cliente</h1>
+            </div>
+            
+            <form>
+                <!--Campo de mensagens-->
+                <div id="errorMessages">
+                   
+                </div>
+                <!--Campo Nome-->
+                <div>
+                    <input type="text" placeholder="Nome" id="nome">    
+                </div> 
+                <!--Campo de Email-->
+                <div>
+                    <input type="email" placeholder="Email" id="email">
+                <!--Escolhe sexo-->
+                <div>
+                    <label for="m">Masc</label>
+                    <input type="radio" name="sexo" value="m">
+                    
+                    <label for="f">Fem</label>
+                    <input type="radio" name="sexo" value="f">
+                </div>
+                <!--Escolhe Cursos-->
+                <fieldset>
+                    <legend>Cursos</legend>
+                    <div>
+                        <input type="checkbox" id="web" name="curso">
+                        <label for="web">Web</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="mobile" name="curso">
+                        <label for="mobile">Mobile</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="desktop" name="curso">
+                        <label for="desktop">Desktop</label>
+                    </div>
+                </fieldset>
+                <!--Escolhe estados-->
+                <div>
+                    <label for="estados">Estado:</label>
+                    <select id="estados">
+                        <option value="">Selecionar</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <!--Escolhe Foto-->
+                <div>
+                    <label>Foto:</label>
+                    <input type="file" id="foto">
+                </div>
+                <!--Escolhe Data-->
+                <div>
+                    <label for="data" class="centro">Data de Nascimento</label>
+                    <input type="datetime-local" id="data">
+                </div>
+                
+                <div class="centro">
+                    <button type="button" onclick="cadastro.validar()">Salvar</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

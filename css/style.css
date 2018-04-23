@@ -1,0 +1,130 @@
+div{
+
+    padding: 10px;
+}
+
+#errorMessages{
+    display: none;
+    font-size: 15px;
+    color: firebrick;
+
+}
+
+
+input[type="text"]{
+    width: 100%;
+}
+
+input[type="email"]{
+    width: 100%;
+}
+
+h1{
+    text-align: center; 
+}
+
+body{
+    font-family: sans-serif;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+}
+
+.centro{
+    text-align: center;
+}
+
+button{
+    width: 30%;
+    background-color: #1B8ADB;
+    color: white;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 30px;
+}
+
+main button:hover{
+    background-color:  rgb(39, 114, 168);
+    cursor: pointer;
+
+}
+
+nav{
+    background-color: #1B8ADB;
+    float: left;
+    width: 30%;
+    height: 100%;
+    box-shadow: 5px 0px 10px gray;
+    color: white;
+    transition: width 1s;
+    overflow: hidden;
+    position: fixed;
+}
+
+li{
+
+    list-style: none;
+    padding-top: 5px;
+}
+
+nav li:hover{
+
+    background-color:  rgb(39, 114, 168);
+    cursor: pointer;
+}
+
+ul{
+    padding: 0px;
+}
+
+
+
+main{
+    width: 70%;
+    float: right;
+    
+    height: 100%;
+
+}
+
+.menuOpen{
+    width: 50px;
+    opacity: 0;
+}
+
+.menuClose{
+    width: 50px;
+    opacity: 0;
+}
+
+/*Menu aberto: representa a largura do NAV quando está aberto*/
+
+.menuAberto{
+    width: 20%;
+}
+
+
+@media (max-width:600px)
+{
+    nav{
+        width: 0%;
+    }
+
+    main{
+        width: 100%;
+        
+    }
+
+    .menuOpen{
+        
+        opacity: 2;
+    }
+    
+    .menuClose{
+       
+        opacity: 2;
+    }
+}
+
