@@ -1,4 +1,4 @@
-# Project-FDP
+# Project-FDP (Fabrica de Programador)
 
 #TLogin.html: Tela inicial de login (sem funcionalidade)
 
@@ -6,7 +6,7 @@
 
 #forgotp.html: Tela para usuario que esqueceu a senha (sem funcionalidade)
 
-#cadastrocliente.html: Tela de cadastro de cliente com menu e algumas funcionalidades de movimento
+#cadastrocliente.html: Tela de cadastro de cliente com menu e algumas funcionalidades 
 
 #menu.js: O js referente ao cadastrocliente.htm 
 
