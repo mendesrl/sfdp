@@ -1,41 +1,12 @@
+<!DOCTYPE html>
 <html>
-    <head> </head>
+    <head>
+        <meta charset="utf-8" />
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/TLogin.css" />
+        <script src="./JavaScript/TLogin.js"></script> 
+    </head>
     
-    <!--Inicio do CSS-->
-    <style>
-        #login{
-            font-family: sans-serif;
-            background-color: #f1f1f1 ; /* pinta o fundo de cinza */
-            width: 30%;
-            margin: auto;
-            padding: 10px;
-            border-radius: 20px;}
-        #login div{
-            text-align: center;
-            padding: 5px;}
-        #login input{
-            width: 70%;
-            padding: 10px;}
-        #login button{
-            width: 30%;
-            background-color: #1B8ADB;
-            color: white;
-            padding: 10px;
-            border: 0px;
-            border-radius: 30px;}
-        #register{
-            font-size: 10pt;
-            color: darkgrey;}
-        #login h1{
-            color:grey;
-            font-weight: 300;}
-        #login img{
-            width: 200px;}
-        body{
-            margin-top:30px;
-            background-color: #1B8ADB;}  
-    </style> <!--Fim do CSS-->
-
     <body>
         <div id="login">
             <div>
@@ -43,16 +14,16 @@
             </div>
             <div > <!--<h1> Log-in</h1>--></div>
             <div>
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Nome de Usuário" id="nome">
             </div>
             <div>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Senha" id="senha">
             </div>
             <div>
-                <button> login </button>
+                <button type="button" onclick="login.validar()"> Entrar </button>
             </div>
             <div id="register">
-                <a href="register.html">Register</a> |  <a href="forgotp.html">Forgot Password</a>
+                <a href="register.html">Cadastre-se</a> |  <a href="forgotp.html">Esqueceu sua senha?</a>
             </div>
         </div>
     </body>
