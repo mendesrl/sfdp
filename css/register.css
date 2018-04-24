@@ -1,0 +1,31 @@
+#registro{
+    font-family: sans-serif;
+    background-color: #f1f1f1 ;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;}
+#registro div{
+    text-align: center;
+    padding: 5px;}
+#registro input{
+    width: 70%;
+    padding: 10px;}
+#registro button{
+    width: 30%;
+    background-color: #1B8ADB;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 30px;}
+#TLogin{
+    font-size: 10pt;
+    color: darkgrey;}
+#registro h1{
+    color:grey;
+    font-weight: 300;}
+#registro img{
+    width: 100px;}
+body{
+    margin-top:30px;
+   background-color: #1B8ADB;}
