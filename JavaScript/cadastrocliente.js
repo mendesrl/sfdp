@@ -47,13 +47,12 @@ class Cadastro
             errorMessages +="A foto deve ter no máximo 1mb\n";}
         if (errorMessages!="")
         {
-            document.getElementById("errorMessages").innerText = errorMessages;
+            document.getElementById("textoMe").innerText = errorMessages;
+            document.getElementById("error").classList.add("show");
                 //window.alert(errorMessages);
             }
             
 
-        
-        
 
 
     }
