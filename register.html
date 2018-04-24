@@ -1,38 +1,11 @@
+<!DOCTYPE <!DOCTYPE html>
 <html>
-    <head><title>Register</title></head>
-    <style>
-        #registro{
-            font-family: sans-serif;
-            background-color: #f1f1f1 ;
-            width: 30%;
-            margin: auto;
-            padding: 10px;
-            border-radius: 20px;}
-        #registro div{
-            text-align: center;
-            padding: 5px;}
-        #registro input{
-            width: 70%;
-            padding: 10px;}
-        #registro button{
-            width: 30%;
-            background-color: #1B8ADB;
-            color: white;
-            padding: 10px;
-            border: 0px;
-            border-radius: 30px;}
-        #TLogin{
-            font-size: 10pt;
-            color: darkgrey;}
-        #registro h1{
-            color:grey;
-            font-weight: 300;}
-        #registro img{
-            width: 150px;}
-        body{
-            margin-top:30px;
-           background-color: #63cdda;}
-    </style>
+    <head>
+        <meta charset="utf-8" />
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/register.css" />
+        <script src="./JavaScript/register.js"></script>
+    </head>
 
     <body>
         <div id="registro">
@@ -43,16 +16,16 @@
                 <h1> Register</h1>
             </div>
             <div>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Nome Completo" id="nome">
             </div>
             <div>
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Nome de Usuário" id="userName">
             </div>
             <div>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Senha" id="senha">
             </div>
             <div>
-                <button> Save </button>
+                <button type="button" onclick="registro.validar()"> Salvar </button>
             </div>
             <div id="TLogin">
                 <a href="TLogin.html">Back</a> 
