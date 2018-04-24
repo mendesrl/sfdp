@@ -3,14 +3,6 @@ div{
     padding: 10px;
 }
 
-#errorMessages{
-    display: none;
-    font-size: 15px;
-    color: firebrick;
-
-}
-
-
 input[type="text"]{
     width: 100%;
 }
@@ -105,6 +97,36 @@ main{
     width: 20%;
 }
 
+.messages{
+    display: none;}
+
+.messages img{
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
+.show
+{
+    display: block;
+    font-size: 10px;
+    color: firebrick;
+    background: rgb(137, 190, 228);
+    animation: anima_sms 1s;
+    padding: 20px;
+    
+}
+
+/*Animação de frames*/
+@keyframes anima_sms{
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
 
 @media (max-width:600px)
 {
